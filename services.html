@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Anne — Services</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="anne-style.css"/>
+<style>
+.hello-section{padding:40px 0;border-bottom:1px solid var(--border);}
+.hello-section h2{font-family:'Orbitron',monospace;font-size:1.6rem;font-weight:900;color:var(--teal);margin-bottom:16px;animation:pulseGlow 3s infinite;}
+.hello-section p{font-size:0.95rem;color:var(--text-dim);line-height:1.7;max-width:760px;}
+.mv-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:32px 0;}
+.mv-card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:24px;}
+.mv-card h3{font-family:'Orbitron',monospace;font-size:0.9rem;color:var(--teal);margin-bottom:12px;letter-spacing:0.1em;}
+.mv-card p{font-size:0.85rem;color:var(--text-dim);line-height:1.6;}
+.services-pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:32px 0;}
+.pillar{background:var(--card);border:1px solid var(--border);border-radius:8px;overflow:hidden;}
+.pillar-header{padding:16px 20px;border-bottom:1px solid var(--border);}
+.pillar-header h3{font-family:'Orbitron',monospace;font-size:0.85rem;font-weight:700;color:#fff;letter-spacing:0.08em;}
+.pillar-body{padding:20px;}
+.pillar-body ul{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.pillar-body li{font-size:0.82rem;color:var(--text-dim);line-height:1.4;padding-left:14px;position:relative;}
+.pillar-body li::before{content:'›';position:absolute;left:0;color:var(--teal);}
+.testimonials{margin:40px 0;}
+.testimonials h2{font-family:'Orbitron',monospace;font-size:0.85rem;letter-spacing:0.2em;color:var(--teal);margin-bottom:24px;}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.testi{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:20px;}
+.testi-text{font-size:0.85rem;color:var(--text-dim);line-height:1.6;font-style:italic;margin-bottom:12px;}
+.testi-name{font-family:'Share Tech Mono',monospace;font-size:0.75rem;color:var(--teal);}
+.faq-section{margin:40px 0;}
+.faq-section h2{font-family:'Orbitron',monospace;font-size:0.85rem;letter-spacing:0.2em;color:var(--teal);margin-bottom:24px;}
+.faq{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:20px;margin-bottom:12px;}
+.faq-q{font-weight:700;font-size:0.9rem;color:#fff;margin-bottom:10px;}
+.faq-a{font-size:0.85rem;color:var(--text-dim);line-height:1.6;}
+.pricing-note{text-align:center;padding:20px;background:rgba(0,245,212,0.05);border:1px solid var(--border);border-radius:8px;font-size:0.85rem;color:var(--text-dim);font-style:italic;margin:24px 0;}
+.connect-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px;}
+.connect-item{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:16px;text-align:center;}
+.connect-label{font-family:'Share Tech Mono',monospace;font-size:0.7rem;color:var(--text-muted);letter-spacing:0.12em;margin-bottom:8px;}
+.connect-value{font-size:0.85rem;color:var(--teal);}
+.connect-value a{color:var(--teal);text-decoration:none;}
+@media(max-width:768px){.mv-grid,.services-pillars,.testi-grid,.connect-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">RG // ANNE</a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="services.html" class="active">Services</a>
+    <a href="expertise.html">Expertise</a>
+    <a href="technical.html">Technical</a>
+    <a href="creative.html">Creative</a>
+    <a href="shadow.html">Shadow</a>
+    <a href="character-sheet.html">Character</a>
+  </div>
+</nav>
+<div class="wrapper">
+  <div class="page-header fade-up">
+    <div class="sys-tag">[ INITIALIZING... ]</div>
+    <h1 class="page-title">Services & Expertise</h1>
+    <p class="page-sub">Where technical logic meets high-end visualization.</p>
+  </div>
+  <div class="container">
+    <div class="hello-section fade-up">
+      <h2>Hello World!</h2>
+      <p>As a Creative Virtual Assistant Specialist, I don't just manage tasks — I manage workflows. With a background in Information Technology and experience in graphic design, data management, and executive support, I specialize in the intersection of creative vision and operational integrity.</p>
+    </div>
+    <div class="section">
+      <div class="mv-grid fade-up delay-1">
+        <div class="mv-card">
+          <h3>Mission</h3>
+          <p>To be the silent engine behind your creative operation, handling the systems, assets, and details so you can stay in your zone.</p>
+        </div>
+        <div class="mv-card">
+          <h3>Vision</h3>
+          <p>A creative landscape where technical precision and visual storytelling aren't opposites — they're the same weapon.</p>
+        </div>
+      </div>
+      <div class="services-pillars fade-up delay-2">
+        <div class="pillar">
+          <div class="pillar-header"><h3>Technical</h3></div>
+          <div class="pillar-body">
+            <ul>
+              <li>Building automated workflows that save you hours every week</li>
+              <li>Setting up and optimizing CRMs and project management tools</li>
+              <li>Handling "under-the-hood" tech so your business runs smoothly</li>
+              <li>File optimization for organizing and streamlining your files</li>
+              <li>Data integrity — ensuring information flows accurately between apps</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-header"><h3>Creative</h3></div>
+          <div class="pillar-body">
+            <ul>
+              <li>Crafting high-end visual assets that make your brand stand out</li>
+              <li>Designing cohesive digital identities across all your platforms</li>
+              <li>Blending strategy with storytelling to turn ideas into cinematic reality</li>
+              <li>Multi-platform adaptation for scaling visuals across web and social</li>
+              <li>Asset library management for organized creative files</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-header"><h3>Shadow Support</h3></div>
+          <div class="pillar-body">
+            <ul>
+              <li>High-level discrete execution for sensitive or complex projects</li>
+              <li>Anticipating your needs and managing the details</li>
+              <li>Acting as your silent powerhouse partner for total peace of mind</li>
+              <li>Strategic planning for communications and scheduling</li>
+              <li>Rapid Response Execution for urgent last-minute details</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-note">Available for project-based, retainer arrangements and packages tailored to your needs.</div>
+      <div class="testimonials fade-up delay-3">
+        <h2>CLIENT TESTIMONIALS</h2>
+        <div class="testi-grid">
+          <div class="testi">
+            <p class="testi-text">"Great experience! Her service is excellent, and the quality exceeded my expectations. Highly recommended!"</p>
+            <div class="testi-name">— Rochelle B.</div>
+          </div>
+          <div class="testi">
+            <p class="testi-text">"Her shadow support fits perfectly into my lifestyle. If you need someone you can trust with the details and quality, she is the person."</p>
+            <div class="testi-name">— Jerica G.</div>
+          </div>
+          <div class="testi">
+            <p class="testi-text">"Not only she is good at troubleshooting, she also delivered digital assets which satisfied our Client's need."</p>
+            <div class="testi-name">— Arch. Rommel G.</div>
+          </div>
+        </div>
+      </div>
+      <div class="faq-section fade-up">
+        <h2>FAQs</h2>
+        <div class="faq">
+          <div class="faq-q">How do I get started with your services?</div>
+          <p class="faq-a">It's as easy as a quick chat! Just send me a brief message about your project. From there, we'll hop on a discovery call to see if we're a good fit, discuss your goals, and pick the service tier that works best for your needs.</p>
+        </div>
+        <div class="faq">
+          <div class="faq-q">Can I mix and match Creative and Technical support?</div>
+          <p class="faq-a">Absolutely! In fact, most of my clients do. Whether you need Technical Support to fix your workflows and a Creative Specialist to polish your brand assets, I can build a custom hybrid package tailored to exactly what you need without any fluff.</p>
+        </div>
+        <div class="faq">
+          <div class="faq-q">What exactly is 'Shadow Support,' and is it right for me?</div>
+          <p class="faq-a">Think of Shadow Support as your silent partner in high-stakes execution. If you have complex projects that require absolute discretion, deep-level organization, and someone to help you solve your problems, this is for you. It's perfect for founders who need a right hand to manage the details behind the scenes.</p>
+        </div>
+      </div>
+      <div style="text-align:center;margin:40px 0;">
+        <a href="https://fsyse93dofd.typeform.com/to/VPBO48G9" class="btn btn-solid" target="_blank">SUBSCRIBE FOR UPDATES</a>
+      </div>
+      <div style="margin-top:40px;">
+        <h2 style="font-family:'Orbitron',monospace;font-size:0.85rem;letter-spacing:0.2em;color:var(--teal);margin-bottom:20px;">LET'S CONNECT</h2>
+        <div class="connect-grid">
+          <div class="connect-item">
+            <div class="connect-label">PHONE</div>
+            <div class="connect-value">+63 9350533915</div>
+          </div>
+          <div class="connect-item">
+            <div class="connect-label">EMAIL</div>
+            <div class="connect-value"><a href="mailto:roxannegoltiano@gmail.com">roxannegoltiano@gmail.com</a></div>
+          </div>
+          <div class="connect-item">
+            <div class="connect-label">LINKEDIN</div>
+            <div class="connect-value"><a href="http://www.linkedin.com/in/roxanne-g-66b8672ba" target="_blank">View Profile →</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="progress-bar">[ Anne_OS: Dual-Core_SYNC_progress | 85% ]</div>
+  <footer><p>DESIGNED BY: <strong>ROXANNE GOLTIANO</strong> &nbsp;•&nbsp; <a href="mailto:roxannegoltiano@gmail.com">roxannegoltiano@gmail.com</a></p></footer>
+</div>
+</body>
+</html>

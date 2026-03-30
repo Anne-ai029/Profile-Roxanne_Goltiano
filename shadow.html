@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Anne — Shadow Support</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="anne-style.css"/>
+<style>
+body{background:#04040c;}
+.shadow-hero{min-height:60vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 40px 40px;position:relative;}
+.shadow-glyph{font-family:'Orbitron',monospace;font-size:4rem;color:rgba(127,119,221,0.3);margin-bottom:24px;animation:pulseGlow 4s infinite;}
+@keyframes pulseGlow{0%,100%{text-shadow:0 0 20px rgba(127,119,221,0.3);}50%{text-shadow:0 0 40px rgba(127,119,221,0.6),0 0 80px rgba(127,119,221,0.2);}}
+.shadow-title{font-family:'Orbitron',monospace;font-size:clamp(1.2rem,3vw,2rem);font-weight:900;color:rgba(200,195,240,0.9);letter-spacing:0.08em;margin-bottom:16px;}
+.shadow-intro{font-size:0.9rem;color:rgba(127,119,221,0.7);max-width:600px;line-height:1.7;margin-bottom:8px;}
+.shadow-intro em{color:rgba(175,169,236,0.9);font-style:normal;}
+.terminal{background:rgba(4,4,12,0.9);border:1px solid rgba(127,119,221,0.25);border-radius:8px;padding:24px;max-width:500px;margin:40px auto;font-family:'Share Tech Mono',monospace;animation:flicker 12s infinite;}
+.terminal-line{font-size:0.72rem;color:rgba(127,119,221,0.6);margin-bottom:6px;letter-spacing:0.1em;}
+.terminal-line.bright{color:rgba(175,169,236,0.85);}
+.restrict-badge{display:inline-block;padding:10px 20px;border:1px solid rgba(127,119,221,0.3);border-radius:4px;font-family:'Orbitron',monospace;font-size:0.72rem;letter-spacing:0.15em;color:rgba(127,119,221,0.6);margin:8px;}
+.progress-bar-shadow{font-family:'Share Tech Mono',monospace;font-size:0.72rem;color:rgba(127,119,221,0.4);letter-spacing:0.1em;text-align:center;padding:16px;border-top:1px solid rgba(127,119,221,0.1);margin-top:60px;}
+footer{border-top-color:rgba(127,119,221,0.15);}
+footer a,footer strong{color:rgba(127,119,221,0.6);}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo" style="color:rgba(127,119,221,0.8);">RG // ANNE</a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="expertise.html">Expertise</a>
+    <a href="technical.html">Technical</a>
+    <a href="creative.html">Creative</a>
+    <a href="shadow.html" class="active" style="color:rgba(127,119,221,0.9);">Shadow</a>
+    <a href="character-sheet.html">Character</a>
+  </div>
+</nav>
+<div class="wrapper">
+  <div class="shadow-hero fade-up">
+    <div class="shadow-glyph">◬</div>
+    <div class="sys-tag" style="color:rgba(127,119,221,0.5);">[ SYSTEM_DETECTED: SHADOW_TERMINAL ]</div>
+    <h1 class="shadow-title">SHADOW SUPPORT SPECIALIST</h1>
+    <p class="shadow-intro">You've stepped off the mapped grid. This is the Shadow Support Specialist interface — the strategic foundation where the logic of the Technical and the flow of the Creative are forged in silence.</p>
+    <p class="shadow-intro" style="margin-top:12px;"><em>Most only see the output. You've found the source code.</em> This space is reserved for internal beta testing, classified foundations, and the quiet operations that keep the ecosystem running.</p>
+    <div class="terminal">
+      <div class="terminal-line bright">> SHADOW_TERMINAL: ACTIVE</div>
+      <div class="terminal-line">> Maintain discretion.</div>
+      <div class="terminal-line">> All background processes are active.</div>
+      <div class="terminal-line bright">> Welcome to the shadows.</div>
+    </div>
+    <div>
+      <div class="restrict-badge">ACCESS IS RESTRICTED</div>
+    </div>
+    <p style="font-size:0.78rem;color:rgba(127,119,221,0.4);margin-top:20px;font-style:italic;letter-spacing:0.05em;">This terminal is currently undergoing internal beta validation and cryptographic synchronization.</p>
+  </div>
+  <div class="progress-bar-shadow">[ Anne_OS: Dual-Core_SYNC_progress | 85% ]</div>
+  <footer style="color:rgba(127,119,221,0.4);"><p>DESIGNED BY: <strong>ROXANNE GOLTIANO</strong> &nbsp;•&nbsp; <a href="mailto:roxannegoltiano@gmail.com">roxannegoltiano@gmail.com</a></p></footer>
+</div>
+</body>
+</html>
